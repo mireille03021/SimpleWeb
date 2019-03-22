@@ -1,0 +1,1175 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.main-menu ul, .hot-items ul, .order-title, .order-title ul, .order-content ul, .price-and-quantity ul, .else-item ul, .else-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+  /* 內容文字大小 */
+  font-family: sans-serif;
+  /* 內容文字類型 */
+  line-height: 1.4;
+  /* 行高 */
+  color: #555;
+  /* 顏色 */
+  font-weight: bold;
+  /* 字形粗體 */
+  font-family: Microsoft JhengHei;
+  /* 字形微軟正黑體 */
+}
+
+a {
+  color: #009ced;
+  /* 連結顏色 */
+  text-decoration: none;
+  /* 文字裝飾 */
+}
+
+a:hover {
+  color: #0081c3;
+  text-decoration: underline;
+}
+
+.container {
+  /* 置中的容器 */
+  width: 1080px;
+  margin: 0 auto;
+  /* 自動置中 */
+}
+
+.page-header {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.main-menu {
+  margin: 0;
+  text-align: center;
+}
+
+.main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*     background-color: #ddd; */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 70px;
+}
+
+.main-menu li {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.main-menu li.block-left {
+  -webkit-box-flex: 0.4;
+      -ms-flex-positive: 0.4;
+          flex-grow: 0.4;
+}
+
+.main-menu li.block-middle {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  position: relative;
+  right: 45px;
+}
+
+.main-menu li.block-right {
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+}
+
+.main-menu a {
+  display: block;
+  color: dimgray;
+}
+
+.main-menu a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.main-menu button {
+  display: none;
+}
+
+.web-name {
+  text-align: center;
+  margin: 0;
+  line-height: 70px;
+  color: black;
+}
+
+.fa-shopping-cart {
+  margin: 0 7px;
+}
+
+/* -------------------------頁首------------------------ */
+.index-image {
+  margin: 10px;
+  height: 450px;
+  background-image: url(../images/shopping.jpg);
+  background-size: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* 滿版指令 */
+  position: relative;
+}
+
+.index-image h2 {
+  margin: 0 60px 0 0;
+  font-size: 56px;
+  color: #fff;
+  text-shadow: 0.01em 0.01em 0.3em #542e55;
+  position: absolute;
+  bottom: 330px;
+  right: 50%;
+}
+
+.hot-items {
+  margin: 40px 0;
+}
+
+.hot-items ul {
+  overflow: auto;
+}
+
+.hot-items li {
+  float: left;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.hot-items h3 {
+  margin: 0;
+}
+
+.hot-items p {
+  margin: 5px;
+  color: #948d8d;
+}
+
+.hot-items a {
+  color: black;
+}
+
+.hot-product {
+  margin: 0 0 40px 0;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+.principle {
+  background: #969696;
+}
+
+.principle dl {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.principle dt {
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.principle dd {
+  margin: 0;
+  padding-bottom: 65px;
+}
+
+.shopping-block {
+  margin: 20px 0;
+}
+
+.keep-shopping {
+  padding: 0 130px;
+}
+
+.keep-shopping a {
+  color: dimgray;
+}
+
+.fa-chevron-left {
+  margin-right: 5px;
+}
+
+.fa-chevron-right {
+  margin-left: 5px;
+}
+
+.order {
+  padding: 30px 130px;
+  color: #969696;
+}
+
+.order-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #e7e7e7 1px solid;
+}
+
+.order-title ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-title li {
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+}
+
+.order-title li.title-shopping-cart {
+  text-align: left;
+}
+
+.order-content {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #e7e7e7 1px solid;
+}
+
+.order-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-content ul.item-detail-block {
+  line-height: 130px;
+  color: black;
+}
+
+.order-content li {
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+}
+
+.order-content li.item-image {
+  color: black;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-content span {
+  color: #787878;
+}
+
+.item-detail {
+  padding: 25px 0 0 20px;
+}
+
+.item-type {
+  color: #787878;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.item-delete a {
+  padding-top: 20px;
+  color: #b3b3b3;
+  text-decoration: underline;
+}
+
+.item-delete a:hover {
+  color: black;
+}
+
+#item-quantity {
+  width: 50px;
+  height: 40px;
+}
+
+.price-and-quantity {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price-and-quantity div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+}
+
+.price-and-quantity ul {
+  border-bottom: #e7e7e7 1px solid;
+}
+
+.price-and-quantity li {
+  line-height: 30px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+
+#Offer {
+  height: 40px;
+  width: 160px;
+  font-size: 25px;
+}
+
+.price {
+  color: black;
+  font-weight: bold;
+}
+
+.detail-sum {
+  font-size: 1.3em;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+
+.detail-sum-price {
+  color: black;
+}
+
+.checkout {
+  text-align: right;
+}
+
+.checkout input {
+  border: 0;
+  color: white;
+  background: black;
+  height: 50px;
+  width: 310px;
+}
+
+.checkout input:active {
+  background: #767676;
+}
+
+.classification {
+  padding: 0 130px;
+}
+
+.classification a {
+  color: dimgray;
+  margin-right: 2px;
+}
+
+.classification i {
+  font-size: 0.7em;
+  color: #b6b6b6;
+  margin-right: 2px;
+}
+
+.item-detail-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 55px 130px;
+}
+
+.content-left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 470px;
+          flex: 0 0 470px;
+}
+
+.content-left img {
+  height: 470px;
+}
+
+.content-left p {
+  padding: 5px 0;
+  font-size: 0.9em;
+}
+
+.content-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 320px;
+          flex: 0 0 320px;
+  padding-left: 30px;
+}
+
+.content-right h3 {
+  margin: 0;
+}
+
+.content-right h4 {
+  margin-bottom: 5px;
+}
+
+.content-right_detail {
+  border-bottom: dimgray 1px solid;
+}
+
+#format {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#shopping-quantity {
+  padding-left: 10px;
+  width: 70px;
+  height: 40px;
+  display: block;
+}
+
+#shopping-button {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  color: white;
+  font-size: 1em;
+  background: black;
+  margin: 20px 0;
+}
+
+#shopping-button:active {
+  background: #767676;
+}
+
+.else-item li {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.else-item_description {
+  padding: 20px 0 0 10px;
+}
+
+.else-item h3 {
+  margin: 0;
+}
+
+.before-and-after .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.before-and-after .container label {
+  padding: 0 40px;
+}
+
+.before-and-after .container a {
+  color: #9c9c9c;
+}
+
+/* --------------------------頁尾-------------------------- */
+.subscribe {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.subscribe h1 {
+  font-size: 32px;
+  margin: 0 0 40px 0;
+}
+
+.Email-block {
+  position: relative;
+  display: inline;
+  padding-bottom: 5px;
+  border-width: 1px;
+  border-bottom: #ddd;
+  border-bottom-style: solid;
+}
+
+.Email-block i {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+#email {
+  padding-left: 30px;
+  width: 580px;
+  border: #fff;
+  height: 20px;
+  font-weight: bold;
+}
+
+#email:focus {
+  outline: none;
+}
+
+.send-button {
+  padding-top: 26px;
+}
+
+.send-button input {
+  width: 625px;
+  line-height: 40px;
+  border: 0;
+  background: black;
+  color: white;
+}
+
+.send-button input:active {
+  background: #767676;
+}
+
+.else-menu {
+  background: #232323;
+  text-align: center;
+}
+
+.else-menu button {
+  display: none;
+}
+
+.else-menu ul {
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.else-menu li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+}
+
+.else-menu a {
+  display: block;
+  color: #fff;
+}
+
+.else-menu a:hover {
+  text-decoration: none;
+  background: #878787;
+  color: black;
+}
+
+.page-buttom {
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+  background: #ddd;
+}
+
+.page-buttom h3 {
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 820px;
+  }
+  .index-image h2 {
+    font-size: 2.5rem;
+  }
+  .hot-items li {
+    margin: 0 calc(35px/3);
+  }
+  .item-detail-content {
+    padding: 55px 100px;
+  }
+  .classification {
+    padding: 0 100px;
+  }
+  .content-left {
+    width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .content-left img {
+    height: 40%;
+    width: 100%;
+  }
+  .content-right {
+    width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .order-title li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 80px;
+            flex: 1 0 80px;
+  }
+  .order-content li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 80px;
+            flex: 1 0 80px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .container {
+    width: 740px;
+  }
+  .index-image h2 {
+    font-size: 2.3rem;
+  }
+  .hot-items li {
+    margin: 0;
+    width: 50%;
+  }
+  .else-menu li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 12%;
+            flex: 0 0 12%;
+  }
+  .item-detail-content {
+    padding: 55px 100px;
+    display: -webkit-box;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .index-image h2 {
+    right: 40%;
+  }
+  .else-menu li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+  }
+  .send-button input {
+    width: 70%;
+  }
+  #email {
+    width: 60%;
+  }
+  .item-detail-content {
+    padding: 55px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .content-left {
+    border-bottom: #000 1px solid;
+    padding: 0 100px;
+    width: 70%;
+    text-align: center;
+  }
+  .content-left img {
+    width: 50%;
+  }
+  .format-block {
+    text-align: center;
+  }
+  .content-right {
+    padding: 0;
+    width: 100%;
+  }
+  .content-right_detail h3:first-child {
+    padding-top: 20px;
+  }
+  .content-right h4 {
+    display: inline-block;
+  }
+  .content-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-right li {
+    margin: auto;
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  .content-right_detail {
+    padding: 0 150px;
+  }
+  #format {
+    width: 50%;
+  }
+  #shopping-quantity {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .else-item h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .index-image h2 {
+    font-size: 2rem;
+  }
+  .main-menu button {
+    width: 100%;
+    display: block;
+    border: 0;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .main-menu button:active {
+    background: #878787;
+  }
+  .main-menu .container > ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-menu li.block-left {
+    margin: 0 auto;
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main-menu li.block-left ul {
+    line-height: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-menu li.block-left a:hover {
+    border-radius: 10px;
+    background: dimgray;
+    color: #fff;
+  }
+  .main-menu li.block-middle {
+    right: 50%;
+    left: 55px;
+    width: 80%;
+  }
+  .main-menu li.block-right {
+    width: 20%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .main-menu li.block-right li {
+    z-index: 1;
+  }
+  .else-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .else-menu button {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .else-menu button:active {
+    background: #878787;
+  }
+  .else-menu i {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .index-image h2 {
+    font-size: 1.7rem;
+  }
+  .hot-items li {
+    margin: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

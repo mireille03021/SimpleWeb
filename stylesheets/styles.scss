@@ -1,0 +1,726 @@
+@import "normalize";
+@import "initial_elements";
+html {
+    font-size: 16px;
+    /* 內容文字大小 */
+    font-family: sans-serif;
+    /* 內容文字類型 */
+    line-height: 1.4;
+    /* 行高 */
+    color: #555;
+    /* 顏色 */
+    font-weight: bold;
+    /* 字形粗體 */
+    font-family: Microsoft JhengHei;
+    /* 字形微軟正黑體 */
+}
+
+a {
+    color: #009ced;
+    /* 連結顏色 */
+    text-decoration: none;
+    /* 文字裝飾 */
+}
+
+a:hover {
+    color: #0081c3;
+    text-decoration: underline;
+}
+
+.container {
+    /* 置中的容器 */
+    width: 1080px;
+    margin: 0 auto;
+    /* 自動置中 */
+}
+
+.page-header {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.main-menu {
+    margin: 0;
+    text-align: center;
+    ul {
+        display: flex;
+        /*     background-color: #ddd; */
+        justify-content: space-between;
+        @extend %nostyle-list;
+        line-height: 70px;
+    }
+    li {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        &.block-left {
+            flex-grow: 0.4;
+        }
+        &.block-middle {
+            flex-grow: 3;
+            position: relative;
+            right: 45px;
+        }
+        &.block-right {
+            flex-grow: 0.5;
+        }
+    }
+    a {
+        display: block;
+        color: $text-color;
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    button {
+        display: none;
+    }
+}
+
+.web-name {
+    text-align: center;
+    margin: 0;
+    line-height: 70px;
+    color: black;
+}
+
+.fa-shopping-cart {
+    margin: 0 7px;
+}
+
+
+/* -------------------------頁首------------------------ */
+
+.index-image {
+    margin: 10px;
+    height: 450px;
+    background-image: url(../images/shopping.jpg);
+    background-size: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 滿版指令 */
+    position: relative;
+    h2 {
+        margin: 0 60px 0 0;
+        font-size: 56px;
+        color: #fff;
+        text-shadow: 0.01em 0.01em 0.3em #542e55;
+        position: absolute;
+        bottom: 330px;
+        right: 50%;
+    }
+}
+
+.hot-items {
+    margin: 40px 0;
+    ul {
+        @extend %nostyle-list;
+        overflow: auto;
+    }
+    li {
+        float: left;
+        margin: 0 10px;
+        text-align: center;
+    }
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 5px;
+        color: rgb(148, 141, 141);
+    }
+    a {
+        color: black;
+    }
+}
+
+.hot-product {
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.principle {
+    background: rgb(150, 150, 150);
+    dl {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+    }
+    dt {
+        font-size: 50px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    dd {
+        margin: 0;
+        padding-bottom: 65px;
+    }
+}
+
+.shopping-block {
+    margin: 20px 0;
+}
+
+.keep-shopping {
+    padding: 0 130px;
+    a {
+        color: $text-color;
+    }
+}
+
+.fa-chevron-left {
+    margin-right: 5px;
+}
+
+.fa-chevron-right {
+    margin-left: 5px;
+}
+
+.order {
+    padding: 30px 130px;
+    color: rgb(150, 150, 150);
+}
+
+.order-title {
+    @extend %nostyle-list;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $underline-color 1px solid;
+    ul {
+        @extend %nostyle-list;
+        display: flex;
+    }
+    li {
+        text-align: right;
+        flex: 1 0 100px;
+    }
+    li.title-shopping-cart {
+        text-align: left;
+    }
+}
+
+.order-content {
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $underline-color 1px solid;
+    ul {
+        @extend %nostyle-list;
+        display: flex;
+    }
+    ul.item-detail-block {
+        line-height: 130px;
+        color: black;
+    }
+    li {
+        text-align: right;
+        flex: 1 0 100px;
+    }
+    li.item-image {
+        color: black;
+        text-align: left;
+        display: flex;
+    }
+    span {
+        color: rgb(120, 120, 120);
+    }
+}
+
+.item-detail {
+    padding: 25px 0 0 20px;
+}
+
+.item-type {
+    color: rgb(120, 120, 120);
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.item-delete {
+    a {
+        padding-top: 20px;
+        color: rgb(179, 179, 179);
+        text-decoration: underline;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+#item-quantity {
+    width: 50px;
+    height: 40px;
+}
+
+.price-and-quantity {
+    justify-content: space-between;
+    padding-top: 20px;
+    display: flex;
+    div {
+        flex: 0 1 300px;
+    }
+    ul {
+        @extend %nostyle-list;
+        border-bottom: $underline-color 1px solid;
+    }
+    li {
+        line-height: 30px;
+        padding-bottom: 25px;
+        display: flex;
+        text-align: right;
+    }
+}
+
+#Offer {
+    height: 40px;
+    width: 160px;
+    font-size: 25px;
+}
+
+.price {
+    color: black;
+    font-weight: bold;
+}
+
+.detail-sum {
+    font-size: 1.3em;
+    padding: 20px 0;
+    display: flex;
+    text-align: right;
+}
+
+.detail-sum-price {
+    color: black;
+}
+
+.checkout {
+    text-align: right;
+    input {
+        border: 0;
+        color: white;
+        background: black;
+        height: 50px;
+        width: 310px;
+        &:active {
+            background: rgb(118, 118, 118);
+        }
+    }
+}
+
+.classification {
+    padding: 0 130px;
+    a {
+        color: $text-color;
+        margin-right: 2px;
+    }
+    i {
+        font-size: 0.7em;
+        color: lighten($text-color, 30);
+        margin-right: 2px;
+    }
+}
+
+.item-detail-content {
+    display: flex;
+    padding: 55px 130px;
+}
+
+.content-left {
+    flex: 0 0 470px;
+    img {
+        height: 470px;
+    }
+    p {
+        padding: 5px 0;
+        font-size: 0.9em;
+    }
+}
+
+.content-right {
+    flex: 0 0 320px;
+    padding-left: 30px;
+    h3 {
+        margin: 0;
+    }
+    h4 {
+        margin-bottom: 5px;
+    }
+    &_detail {
+        border-bottom: $text-color 1px solid;
+    }
+}
+
+#format {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#shopping-quantity {
+    padding-left: 10px;
+    width: 70px;
+    height: 40px;
+    display: block;
+}
+
+#shopping-button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    color: white;
+    font-size: 1em;
+    background: black;
+    margin: 20px 0;
+    &:active {
+        background: rgb(118, 118, 118);
+    }
+}
+
+.else-item {
+    ul {
+        @extend %nostyle-list;
+    }
+    li {
+        padding: 10px 0;
+        display: flex;
+    }
+    &_description {
+        padding: 20px 0 0 10px;
+    }
+    h3 {
+        margin: 0;
+    }
+}
+
+.before-and-after .container {
+    display: flex;
+    justify-content: center;
+    label {
+        padding: 0 40px;
+    }
+    a {
+        color: lighten($text-color, 20);
+    }
+}
+
+
+/* --------------------------頁尾-------------------------- */
+
+.subscribe {
+    padding: 60px 0;
+    text-align: center;
+    h1 {
+        font-size: 32px;
+        margin: 0 0 40px 0;
+    }
+}
+
+.Email-block {
+    position: relative;
+    display: inline;
+    padding-bottom: 5px;
+    border-width: 1px;
+    border-bottom: #ddd;
+    border-bottom-style: solid;
+    i {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+}
+
+#email {
+    padding-left: 30px;
+    width: 580px;
+    border: #fff;
+    height: 20px;
+    font-weight: bold;
+}
+
+#email:focus {
+    outline: none;
+}
+
+.send-button {
+    padding-top: 26px;
+    input {
+        width: 625px;
+        line-height: 40px;
+        border: 0;
+        background: black;
+        color: white;
+        &:active {
+            background: rgb(118, 118, 118);
+        }
+    }
+}
+
+.else-menu {
+    background: #232323;
+    text-align: center;
+    button {
+        display: none;
+    }
+    ul {
+        @extend %nostyle-list;
+        line-height: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        flex: 0 0 10%;
+    }
+    a {
+        display: block;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+            background: rgb(135, 135, 135);
+            color: black;
+        }
+    }
+}
+
+.page-buttom {
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    background: #ddd;
+    h3 {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+// ----------------------------以下為RMD----------------------------
+@media screen and (max-width: "1140px") {
+    .container {
+        width: 820px;
+    }
+    .index-image {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+    .hot-items {
+        li {
+            margin: 0 calc(35px/3);
+        }
+    }
+    .item-detail-content {
+        padding: 55px 100px;
+    }
+    .classification {
+        padding: 0 100px;
+    }
+    .content-left {
+        width: 50%;
+        flex: 1;
+        img {
+            height: 40%;
+            width: 100%;
+        }
+    }
+    .content-right {
+        width: 50%;
+        flex: 1;
+    }
+    .order-title li {
+        flex: 1 0 80px;
+    }
+    .order-content li {
+        flex: 1 0 80px;
+    }
+}
+
+@media screen and (max-width: "880px") {
+    .container {
+        width: 740px;
+    }
+    .index-image {
+        h2 {
+            font-size: 2.3rem;
+        }
+    }
+    .hot-items {
+        li {
+            margin: 0;
+            width: 50%;
+        }
+    }
+    .else-menu {
+        li {
+            flex: 0 0 12%;
+        }
+    }
+    .item-detail-content {
+        padding: 55px 100px;
+        display: -webkit-box;
+    }
+}
+
+@media screen and (max-width: "767px") {
+    .container {
+        width: 90%;
+    }
+    .index-image {
+        h2 {
+            right: 40%;
+        }
+    }
+    .else-menu {
+        li {
+            flex: 0 0 15%;
+        }
+    }
+    .send-button input {
+        width: 70%;
+    }
+    #email {
+        width: 60%;
+    }
+    .item-detail-content {
+        padding: 55px 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content-left {
+        border-bottom: #000 1px solid;
+        padding: 0 100px;
+        width: 70%;
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+    .format-block {
+        text-align: center;
+    }
+    .content-right {
+        padding: 0;
+        width: 100%;
+        &_detail h3:first-child {
+            padding-top: 20px;
+        }
+        h4 {
+            display: inline-block;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        li {
+            margin: auto;
+            text-align: left;
+            flex: 1 0 auto;
+        }
+        &_detail {
+            padding: 0 150px;
+        }
+    }
+    #format {
+        width: 50%;
+    }
+    #shopping-quantity {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .else-item h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: "640px") {
+    .index-image {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .main-menu {
+        button {
+            width: 100%;
+            display: block;
+            border: 0;
+            border-radius: 10px;
+            background: $main-color;
+            color: #fff;
+            margin: 0 auto;
+            padding: 10px 0;
+            &:active {
+                background: rgb(135, 135, 135);
+            }
+        }
+        & .container>ul {
+            flex-wrap: wrap;
+        }
+        li.block-left {
+            margin: 0 auto;
+            width: 50%;
+            ul {
+                line-height: 50px;
+                flex-direction: column;
+            }
+            a:hover {
+                border-radius: 10px;
+                background: $text-color;
+                color: #fff;
+            }
+            order: 2;
+        }
+        li.block-middle {
+            right: 50%;
+            left: 55px;
+            width: 80%;
+        }
+        li.block-right {
+            width: 20%;
+            order: 1;
+            li {
+                z-index: 1;
+            }
+        }
+    }
+    .else-menu {
+        ul {
+            flex-direction: column;
+        }
+        button {
+            display: block;
+            width: 100%;
+            border: 0;
+            background: transparent;
+            color: #fff;
+            margin: 0 auto;
+            padding: 20px 0;
+            &:active {
+                background: rgb(135, 135, 135);
+            }
+        }
+        i {
+            padding: 0 5px;
+        }
+    }
+}
+
+@media screen and (max-width: "580px") {
+    .index-image {
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
+    .hot-items {
+        li {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

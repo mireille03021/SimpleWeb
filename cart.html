@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>剁手網-購物車</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="container">
+            <div class="top-message">新春特價中！三件免運費再抽大紅包!</div>
+        </div>
+    </header>
+    <nav class="main-menu">
+        <div class="container">
+            <ul>
+                <li class="block-left">
+                    <button visible>Menu<i class="fas fa-chevron-down"></i></button>
+                    <ul>
+                        <li>
+                            <a href="#">線上商城</a>
+                        </li>
+                        <li>
+                            <a href="#">關於剁手</a>
+                        </li>
+                        <li>
+                            <a href="#">聯絡我們</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="block-middle">
+                    <h1 class="web-name">剁手網</h1>
+                </li>
+                <li class="block-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-globe-asia"></i></a>
+                        </li>
+                        <li class="shopping-cart">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="shopping-block">
+        <div class="container">
+            <div class=" keep-shopping">
+                <i class="fas fa-chevron-left "></i>
+                <a href="# ">繼續購物</a>
+            </div>
+            <div class="order">
+                <ul class="order-title">
+                    <li class="title-shopping-cart">購物車(1)</li>
+                    <li>
+                        <ul>
+                            <li>價格</li>
+                            <li>數量</li>
+                            <li>小計</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="order-content">
+                    <li class="item-image">
+                        <img src="https://dummyimage.com/130x130/000/fff.jpg?text=130%20x%20130" alt="" />
+                        <div class="item-detail">
+                            神采飛揚 16色珠光眼影
+                            <span>[自然色]</span>
+                            <div class="item-type">YR-5640</div>
+                            <div class="item-delete">
+                                <a href="#" class="">刪除</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <ul class="item-detail-block">
+                            <li>$ 1750</li>
+                            <li>
+                                <input type="text" name="item-quantity" id="item-quantity" placeholder="0" />
+                            </li>
+                            <li>$1750</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="price-and-quantity">
+                    <div>
+                        使用折扣碼 :
+                        <input type="text" name="Offer" id="Offer" />
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <div>商品金額</div>
+                                <div class="price">$ 1750</div>
+                            </li>
+                            <li>
+                                <div>運費</div>
+                                <div class="price">$ 0</div>
+                            </li>
+                        </ul>
+                        <div class="detail-sum">
+                            <div class="sum">總計</div>
+                            <div class="detail-sum-price">$ 1750</div>
+                        </div>
+                        <div class="checkout">
+                            <input type="button" value="結帳" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container">
+            <h1>擔心錯過剁手的好機會嗎 ?<br />快來訂電子報吧 !</h1>
+            <div class="Email-block">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="Email" id="email" placeholder="email" />
+            </div>
+            <div class="send-button">
+                <input type="button" value="訂 !" />
+            </div>
+        </div>
+    </div>
+    <nav class="else-menu">
+        <div class="container">
+            <button visible>About<i class="fas fa-chevron-down"></i></button>
+            <ul>
+                <li><a href="#">線上商城</a></li>
+                <li><a href="#">關於剁手</a></li>
+                <li><a href="#">聯絡我們</a></li>
+                <li><a href="#">運費資訊</a></li>
+                <li><a href="#">隱私權政策</a></li>
+            </ul>
+        </div>
+    </nav>
+    <footer class="page-buttom">
+        <div class="container">
+            <h3>2019 &copy BuildSchool</h3>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            if ($(".main-menu button").is(":visible")) {
+                $(".main-menu .block-left ul").hide();
+                $(".main-menu button").on("click", function() {
+                    $(".main-menu .block-left ul").toggle();
+                    $(".main-menu button i").toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
+                });
+            }
+        });
+        $(function() {
+            if ($(".else-menu button").is(":visible")) {
+                $(".else-menu ul").hide();
+                $(".else-menu button").on("click", function() {
+                    $(".else-menu ul").toggle();
+                    $(".else-menu button i").toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
