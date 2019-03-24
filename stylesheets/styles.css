@@ -1090,11 +1090,17 @@ a:hover {
   .index-image h2 {
     font-size: 2rem;
   }
+  .main-menu {
+    position: relative;
+  }
+  .main-menu .container {
+    margin: 0;
+    width: 100%;
+  }
   .main-menu button {
     width: 100%;
     display: block;
     border: 0;
-    border-radius: 10px;
     background: #000;
     color: #fff;
     margin: 0 auto;
@@ -1108,21 +1114,24 @@ a:hover {
         flex-wrap: wrap;
   }
   .main-menu li.block-left {
-    margin: 0 auto;
-    width: 50%;
+    margin: 0;
+    width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
   .main-menu li.block-left ul {
+    position: absolute;
     line-height: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 5;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
   }
   .main-menu li.block-left a:hover {
-    border-radius: 10px;
     background: dimgray;
     color: #fff;
   }
@@ -1140,7 +1149,17 @@ a:hover {
   .main-menu li.block-right li {
     z-index: 1;
   }
+  .else-menu {
+    position: relative;
+  }
+  .else-menu .container {
+    margin: 0;
+    width: 100%;
+  }
   .else-menu ul {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
